@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': ( BuildContext context ) => HomeView(),
+        'details': ( BuildContext context ) => HomeView(),
       },
     );
   }

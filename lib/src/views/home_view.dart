@@ -23,6 +23,7 @@ class HomeView extends StatelessWidget {
           child: Column(
             children: <Widget>[
               this._swiperCaards(),
+              SizedBox(height: 5,),              
               // Slider Movies
               MovieSlider()
             ],

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies/src/providers/movies_provider.dart';
-import 'package:movies/src/widgets/card_swiper_widget.dart';
+
 
 class DetailsView extends StatelessWidget {
   const DetailsView({Key key}) : super(key: key);
@@ -21,7 +20,7 @@ class DetailsView extends StatelessWidget {
         body: Container(
           child: Column(
             children: <Widget>[
-              this._swiperCaards()
+              Text("Details")
             ],
           ),
         )
@@ -29,9 +28,5 @@ class DetailsView extends StatelessWidget {
   }
 
   /* Methods */
-  Widget _swiperCaards () {
-    final MoviesProvider mp = MoviesProvider();
-    mp.onCinema();
-    return CardSwiper(moviesList: [1,2,3,4,5]);
-  }
+  
 }

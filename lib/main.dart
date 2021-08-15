@@ -15,6 +15,11 @@ class MyApp extends StatelessWidget {
         '/': ( BuildContext context ) => HomeView(),
         'details': ( BuildContext context ) => DetailsView(),
       },
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: AppBarTheme(
+          color: Colors.purple.shade600
+        )        
+      ),
     );
   }
 }

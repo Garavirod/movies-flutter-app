@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies/src/providers/movies_provider.dart';
-import 'package:movies/src/widgets/card_swiper_widget.dart';
+import 'package:movies/src/widgets/widgets.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
@@ -10,7 +10,8 @@ class HomeView extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Movies in cinema'),
-          backgroundColor: Colors.green[300],
+          elevation: 1,
+          //backgroundColor: Colors.green[300],
           actions: [
             IconButton(
               icon: Icon(Icons.search), 
@@ -18,10 +19,12 @@ class HomeView extends StatelessWidget {
             )
           ],
         ),
-        body: Container(
+        body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              this._swiperCaards()
+              this._swiperCaards(),
+              // Slider Movies
+              MovieSlider()
             ],
           ),
         )

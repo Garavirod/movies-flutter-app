@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-
+//import 'package:movies/widgets/widgets.dart';
  
 class CardSwiper extends StatelessWidget {
   final List<dynamic> moviesList;
